@@ -20,7 +20,7 @@ el_y =st.selectbox('select y element', el_list)
 
 file_name=st.selectbox('select file', file_name_list)
 
-df=pd.read_csv('file_name')
+#df=pd.read_csv('file_name')
 p = figure(x_axis_label='X', y_axis_label='Y')
 
 p.circle(df[el_x], df[el_y])
