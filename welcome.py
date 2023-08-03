@@ -23,7 +23,9 @@ file_name=st.selectbox('select file', file_name_list)
 
 p = figure(x_axis_label='X', y_axis_label='Y') #title
 
-p.circle(df['Si']/1000, df['Mg']/1000) #color, size, alpha
+p.circle(df['el_x']/1000, df['el_y']/1000) #color, size, alpha
+p.line([np.min(df['el_x']/1000, np.max(df['el_y']/1000)], ([np.mean(df['el_x']/1000, np.mean(df['el_y']/1000)]))
+                                                                   
 #p.line([0,20], [5,5]) #line_width=2, line_color='green'
 #p.rect(x=24, y=4, height=3, color='yellow')
 
