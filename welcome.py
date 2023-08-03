@@ -4,12 +4,15 @@ import os
 
 file_name_list=[]
 for i in os.listdir():
-
-if i.endswith('csv'):
+  if i.endswith('csv'): 
+  file_name_list.append(i)
+  
 st.write('Hello world')
 
-df=pd.read_csv('C:/Users/korkm/Downloads/Exercises & Data/data/Bastar craton.csv')
+'select element'
 st.dataframe(df)
 
 el_list=df.columns.tolist()[27:80]
-x_axis=st.selectbox('select element',el_list)
+x_axis=st.selectbox('select element', el_list)
+
+st.multiselect('select location', file_name_list)
