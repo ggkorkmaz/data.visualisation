@@ -24,7 +24,7 @@ file_name=st.selectbox('select file', file_name_list)
 p = figure(x_axis_label='X', y_axis_label='Y') #title
 
 p.circle(df[el_x], df[el_y]) #color, size, alpha
-p.line([np.min(df[el_x]), np.max(df[el_y])], ([np.mean(df[el_x]), np.mean(df[el_y])]))
+p.line([np.min(df[el_x]), np.max(df[el_x])], ([np.mean(df[el_y]), np.mean(df[el_y])]))
                                                                    
 st.header("plot")
 st.bokeh_chart(p)
