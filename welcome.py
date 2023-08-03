@@ -29,4 +29,5 @@ p.line([np.min(df[el_x]), np.max(df[el_y])], ([np.mean(df[el_x]), np.mean(df[el_
 #p.line([0,20], [5,5]) #line_width=2, line_color='green'
 #p.rect(x=24, y=4, height=3, color='yellow')
 
+st.header("plot")
 st.bokeh_chart(p)
