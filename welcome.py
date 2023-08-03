@@ -21,8 +21,10 @@ el_y =st.selectbox('select y element', el_list)
 file_name=st.selectbox('select file', file_name_list)
 
 
-p = figure(x_axis_label='X', y_axis_label='Y')
+p = figure(x_axis_label='X', y_axis_label='Y') #title
 
-p.circle(df[el_x], df[el_y])
+p.circle(df['Si']/1000, df['Mg']/1000) #color, size, alpha
+#p.line([0,20], [5,5]) #line_width=2, line_color='green'
+#p.rect(x=24, y=4, height=3, color='yellow')
 
 st.bokeh_chart(p)
