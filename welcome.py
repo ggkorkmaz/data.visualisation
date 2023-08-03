@@ -10,7 +10,9 @@ for i in os.listdir():
   
 st.write('Hello world')
 
+
 'select element'
+df=pd.read_csv("Bastar Craton.csv")
 st.dataframe(df)
 
 el_list=df.columns.tolist()[27:80]
