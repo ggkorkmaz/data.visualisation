@@ -28,3 +28,4 @@ p.line([np.min(df[el_x]), np.max(df[el_x])], ([np.mean(df[el_y]), np.mean(df[el_
                                                                    
 st.header("plot")
 st.bokeh_chart(p)
+
